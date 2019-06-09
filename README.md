@@ -71,7 +71,7 @@ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_pa
 
 接下来是认真观看并学习了vtuber相关弹幕的模型酱：
 
-<p>近
+<p>
     <img src="Image/Ok_finally.png"/>
 </p>
 
