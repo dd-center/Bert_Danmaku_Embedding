@@ -17,9 +17,9 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 本次训练所用的数据由以下两部分组成：
 
-  \1. 由[simon3000](https://github.com/simon300000)收集的[vtuber直播弹幕数据库](https://github.com/bilibili-dd-center/bilibili-vtuber-danmaku.git)
+   1. 由[simon3000](https://github.com/simon300000)收集的[vtuber直播弹幕数据库](https://github.com/bilibili-dd-center/bilibili-vtuber-danmaku.git)
 
-  \2. 通过爬虫获得的[vtuber相关视频弹幕](https://github.com/bilibili-dd-center/Danmaku_dataset_augmentation.git)
+   2. 通过爬虫获得的[vtuber相关视频弹幕](https://github.com/bilibili-dd-center/Danmaku_dataset_augmentation.git)
 
 需要注意的是，来自同一个视频或同一次直播的弹幕被划分到一起。换言之，我们把来自一个来源的弹幕看作一篇文章，并且每条弹幕占一行。对于不同的文章，中间用空格隔开。这是Bert输入要求的格式。
 
