@@ -29,7 +29,7 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 ## 训练
 
-介于训练Bert所需要点计算量异常的大，这里我们用谷歌的TPU来进行训练。谷歌的TPU_V3.8在运行Bert的速度上是 NVIDIA GeForce GTX 1080 Ti 的35倍，推荐给没有耐心等待训练结果的你。谷歌给所有新注册的用户300刀的试用金，而你可以用每小时2.4刀的价格使用TPU。这里是利用TPU来进行预训练的[傻瓜教程](https://github.com/pren1/A_Pipeline_Of_Pretraining_Bert_On_Google_TPU.git)，以供参考。
+介于训练Bert所需要的计算量异常大，这里我们用谷歌的TPU来进行训练。谷歌的TPU_V3.8在运行Bert的速度上是 NVIDIA GeForce GTX 1080 Ti 的35倍，推荐给没有耐心等待训练结果的你。谷歌给所有新注册的用户300刀的试用金，而你可以用每小时2.4刀的价格使用TPU。这里是利用TPU来进行预训练的[傻瓜教程](https://github.com/pren1/A_Pipeline_Of_Pretraining_Bert_On_Google_TPU.git)，以供参考。
 
 
 
