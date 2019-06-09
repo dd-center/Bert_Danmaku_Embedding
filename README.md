@@ -9,8 +9,6 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 作为NLP领域最近最大的进展之一，由[谷歌在2018年发布的Bert](https://github.com/google-research/bert.git)能够在各种自然语言处理任务上表现出尖端的效果。利用Bert包含以下两个步骤：预训练以及fine-tune。作为预训练部分，Bert将输入的句子投影到高维空间，也就是表示为Embedding vector。而对于fine-tune部分，Bert则将通过标注好的数据在各种自然语言处理任务上大显身手。虽然谷歌已经提供了[中文的预训练模型](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)，但是用弹幕数据库对谷歌提供的模型进行再一次的预训练是有必要的，而这将对接下来Bert在具体任务上的效果产生影响。
 
-
-
 ### 准备
 
 #### 1. 数据组成
@@ -31,11 +29,9 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 介于训练Bert所需要的计算量异常大，这里我们用谷歌的TPU来进行训练。谷歌的TPU_V3.8在运行Bert的速度上是 NVIDIA GeForce GTX 1080 Ti 的35倍，推荐给没有耐心等待训练结果的你。谷歌给所有新注册的用户300刀的试用金，而你可以用每小时2.4刀的价格使用TPU。这里是利用TPU来进行预训练的[傻瓜教程](https://github.com/pren1/A_Pipeline_Of_Pretraining_Bert_On_Google_TPU.git)，以供参考。
 
-
-
 ### 训练结果
 
-在烧掉了一百刀的试用金之后，我得到了让人满意的结果。实际上，只需要以2048的batch size运行1.2万个iteration 即可。需要注意的是，对于GTX 1080-Ti来说，大于32的batch size都会造成Ram不足。这也是推荐使用Tpu的原因之一。
+在烧掉了一百刀的试用金之后，最终得到了让人满意的结果。实际上，只需要以2048的batch size运行1.2万个iteration 即可。需要注意的是，对于GTX 1080-Ti来说，大于32的batch size都会造成Ram不足。这也是推荐使用Tpu的原因之一。
 
 下表展示了训练的结果。可以看到，最初的谷歌预训练网络在弹幕数据集上的两个任务（Masked LM 以及 Next Sentence Prediction）的效果并不算好。而在训练之后，效果均得到了提升。Evaluation Set则是由新收集的直播间弹幕组成，因此在训练时模型并没有见过。
 
