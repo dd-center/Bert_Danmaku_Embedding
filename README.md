@@ -25,7 +25,7 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 #### 2. 数据预处理
 
-谷歌提供的预训练模型之中，有字典vocab.txt存在。其中包含了常用的汉字和符号。如果对其进行更改或添加，则要求的预训练时间会明显变长。在这里，我们只用谷歌提供的字典，并且剔除了含有字典中不存在字符的弹幕。如，包含emoji表情的弹幕。经过简单转换的数据存在[danmaku_text_pure.txt](https://drive.google.com/file/d/1Z2JobhFHcXyMYxa_dP2eHHXs4Jv_WANi/view?usp=sharing)内。如果你需要在自己的数据库上训练，那么可以参照相应的格式来自行制作txt文件。
+谷歌提供的预训练模型之中，有字典vocab.txt存在。其中包含了常用的汉字和符号。如果对其进行更改或添加，则预训练时间会明显变长。在这里，我们只用谷歌提供的字典，并且剔除了含有字典中不存在字符的弹幕。如，包含emoji表情的弹幕。经过简单转换的数据存在[danmaku_text_pure.txt](https://drive.google.com/file/d/1Z2JobhFHcXyMYxa_dP2eHHXs4Jv_WANi/view?usp=sharing)内。如果你需要在自己的数据库上训练，那么可以参照相应的格式来自行制作txt文件。
 
 ## 训练
 
