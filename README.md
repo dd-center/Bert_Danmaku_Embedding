@@ -21,7 +21,7 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
    2. 通过爬虫获得的[vtuber相关视频弹幕](https://github.com/bilibili-dd-center/Danmaku_dataset_augmentation.git)
 
-需要注意的是，来自同一个视频或同一次直播的弹幕被划分到一起。换言之，我们把来自一个来源的弹幕看作一篇文章，并且每条弹幕占一行。对于不同的文章，中间用空格隔开。这是Bert输入要求的格式。
+需要注意的是，来自同一个视频或同一次直播的弹幕被划分到一起。换言之，我们把来自一个来源的弹幕一起看作一篇文章，并且每条弹幕占一行。对于不同的文章，中间用空格隔开。这是Bert输入要求的格式。
 
 #### 2. 数据预处理
 
