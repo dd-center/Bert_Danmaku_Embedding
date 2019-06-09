@@ -61,7 +61,7 @@ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_pa
 
 为了验证embedding 的结果，我们首先用主成分分析法（PCA）将数据从768维降到50维，再用t-SNE投影到二维。需要注意的是，从高维投影到低维，一部分信息不可逆的损失掉了。这部分的脚本在Danmaku_similarity.py里。
 
-作为对比，我们首先运用谷歌提供的中文预训练模型来生成word embedding。如果两个概念类似的话，那么它们在二维平面上的距离也很近：
+作为对比，我们首先运用谷歌提供的中文预训练模型来生成Embedding Vector。注意，如果两个概念类似的话，那么它们在二维平面上的距离也很近：
 
 <p>
     <img src="Image/start_point_ok.png"/>
