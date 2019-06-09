@@ -40,10 +40,10 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 下表展示了训练的结果。可以看到，最初的谷歌预训练网络在弹幕数据集上的两个任务（Masked LM 以及 Next Sentence Prediction）的效果并不算好。而在训练之后，效果均得到了提升。Evaluation Set则是由新收集的直播间弹幕组成，因此在训练时模型并没有见过。
 
 |                                   | masked_lm_accuracy | masked_lm_loss | next_sentence_accuracy | next_sentence_loss |
-| --------------------------------- | :----------------: | :------------: | :--------------------: | ------------------ |
-| **Pre-trained model**             |     0.48032853     |    3.155205    |         0.5275         | 2.2248225          |
-| **Tuned model on training set**   |     0.7067532      |   1.3825288    |        0.97375         | 0.086835           |
-| **Tuned model on evaluation set** |     0.65252227     |   1.7447132    |         0.865          | 0.3875436          |
+| --------------------------------- | :----------------: | :------------: | :--------------------: | :----------------: |
+| **Pre-trained model**             |     0.48032853     |    3.155205    |         0.5275         |     2.2248225      |
+| **Tuned model on training set**   |     0.7067532      |   1.3825288    |        0.97375         |      0.086835      |
+| **Tuned model on evaluation set** |     0.65252227     |   1.7447132    |         0.865          |     0.3875436      |
 
 收据：
 
