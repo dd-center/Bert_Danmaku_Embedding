@@ -55,12 +55,12 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
     <img src="Image/payment.png"/>
 </p>
 
-###使用Bert模型生成embedding vector
+### 使用Bert模型生成embedding vector
 
-这里我们用了bert-as-service这个非常方便的工具，具体安装见链接。安装完成之后，运行：
+这里我们用了[bert-as-service](https://github.com/hanxiao/bert-as-service.git)这个非常方便的工具，具体安装见链接。安装完成之后，运行：
 
 ```
-renpeng$ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_path_to_your_model/ -ckpt_name=model.ckpt-12000 -num_worker=1 -pooling_layer=-1
+bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_path_to_your_model/ -ckpt_name=model.ckpt-12000 -num_worker=1 -pooling_layer=-1
 ```
 
 以开启bert本地服务。请把 your_path_to_your_model 替换成模型所在的路径，model.ckpt-225000替换成模型名称。
