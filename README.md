@@ -3,7 +3,7 @@
     <img src="Image/dd_center.png"/>
 </p>
 
-Pre-trained Bert model for generating Danmaku Embedding
+Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 ### 介绍
 
