@@ -1,10 +1,9 @@
 # Bert_Danmaku_Embedding
-
-Pre-trained Bert model for generating Danmaku Embedding
-
 <p>
     <img src="Image/dd_center.png"/>
 </p>
+
+Pre-trained Bert model for generating Danmaku Embedding
 
 ### 介绍
 
