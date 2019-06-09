@@ -3,7 +3,7 @@
 Pre-trained Bert model for generating Danmaku Embedding
 
 <p>
-    <img src="image/dd_center.png"/>
+    <img src="Image/dd_center.png"/>
 </p>
 
 ### 介绍
@@ -53,7 +53,7 @@ Pre-trained Bert model for generating Danmaku Embedding
 收据：
 
 <p>
-    <img src="image/payment.png"/>
+    <img src="Image/payment.png"/>
 </p>
 
 ###使用Bert模型生成embedding vector
@@ -73,7 +73,7 @@ renpeng$ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir
 作为对比，我们首先运用谷歌提供的中文预训练模型来生成word embedding。如果两个概念类似的话，那么它们在二维平面上的距离也很近：
 
 <p>
-    <img src="image/start_point_ok.png"/>
+    <img src="Image/start_point_ok.png"/>
 </p>
 
 这个不行啊，看起来我们刚从谷歌那里接过来的模型酱完全搞不清楚状况。虽然语义相近的词在一起，但是对于vtuber圈子里的一些梗完全没辙，而这也是我们要用弹幕数据库进行预训练的原因。
@@ -81,7 +81,7 @@ renpeng$ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir
 接下来是认真观看并学习了vtuber相关弹幕的模型酱：
 
 <p>
-    <img src="image/Ok_finally.png"/>
+    <img src="Image/Ok_finally.png"/>
 </p>
 
 Bravo！🎉你做到了，模型酱！🎉我们可以来分析一下：
