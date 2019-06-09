@@ -35,7 +35,7 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 
 ### 训练结果
 
-在烧掉了一百刀的试用金之后，我们得到了让人满意的结果。实际上，只需要以2048的batch size运行12万个iteration 即可。需要注意的是，对于GTX 1080-Ti来说，大于32的batch size都会造成Ram不足。这也是推荐使用Tpu的原因之一。
+在烧掉了一百刀的试用金之后，我们得到了让人满意的结果。实际上，只需要以2048的batch size运行1.2万个iteration 即可。需要注意的是，对于GTX 1080-Ti来说，大于32的batch size都会造成Ram不足。这也是推荐使用Tpu的原因之一。
 
 下表展示了训练的结果。可以看到，最初的谷歌预训练网络在弹幕数据集上的两个任务（Masked LM 以及 Next Sentence Prediction）的效果并不算好。而在训练之后，效果均得到了提升。Evaluation Set则是由新收集的直播间弹幕组成，因此在训练时模型并没有见过。
 
@@ -67,7 +67,7 @@ bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_pa
 
 ### 数据可视化
 
-为了验证embedding 的结果，我们首先用主成分分析法（PCA）将数据从768维降到50维，再用t-SNE投影到二维。需要注意的是，从高维投影到低维，一部分信息不可逆的损失掉了。这部分的脚本在Danmaku_similarity.py内。
+为了验证embedding 的结果，我们首先用主成分分析法（PCA）将数据从768维降到50维，再用t-SNE投影到二维。需要注意的是，从高维投影到低维，一部分信息不可逆的损失掉了。这部分的脚本在Danmaku_similarity.py里。
 
 作为对比，我们首先运用谷歌提供的中文预训练模型来生成word embedding。如果两个概念类似的话，那么它们在二维平面上的距离也很近：
 
