@@ -63,7 +63,7 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -tuned_model_dir=/your_path_to_your_model/ -ckpt_name=model.ckpt-12000 -num_worker=1 -pooling_layer=-1
 ```
 
-以开启bert本地服务。请把 your_path_to_your_model 替换成模型所在的路径，model.ckpt-225000替换成模型名称。
+以开启bert本地服务。请把 your_path_to_your_model 替换成模型所在的路径。
 
 ### 数据可视化
 
