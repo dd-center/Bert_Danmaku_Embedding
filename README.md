@@ -45,10 +45,6 @@ Pre-trained Bert model for generating Danmaku Embedding related to vtubers
 | **Tuned model on training set**   |     0.7067532      |   1.3825288    |        0.97375         | 0.086835           |
 | **Tuned model on evaluation set** |     0.65252227     |   1.7447132    |         0.865          | 0.3875436          |
 
-⚠️注意⚠️
-
-如果降低iteration数目，模型在training set上的表现会和evaluation set上一样。然而，通过可视化方法，我发现模型实际上并没有学习到足够的相关知识。而就目前来说，这已经是能够做到的最好的结果（如果你有兴趣可以接着调）。通过接下来数据可视化中的图片我们可以观察到，模型的效果实际上还是不错的，尚且处于可以接受的范围。至于在下游NLP项目上的效果，则需要一边调节iteration数目，一边观测最终效果，以此来得到最合适的training iteration。
-
 收据：
 
 <p>
